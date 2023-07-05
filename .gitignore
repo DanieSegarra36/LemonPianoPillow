@@ -1,0 +1,17 @@
+# Ignore Nix files
+*.nix
+
+# Ignore configuration files
+*.config/
+
+# Ignore cache files
+*.cache/
+
+# Ignore Replit files
+*.replit
+
+*archive/
+
+*.zip
+
+*OG.mp4
