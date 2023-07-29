@@ -22,6 +22,8 @@ cohortsDropdown.addEventListener("change", function () {
   // Show the selected ul element
   if (selectedUL) {
     selectedUL.classList.remove("hidden");
+    let title = document.querySelector("#top>h1");
+    title.innerHTML = `${selectedUL.textContent}<br /><span>Final Projects</span>`;
   }
 });
 
