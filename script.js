@@ -23,7 +23,7 @@ cohortsDropdown.addEventListener("change", function () {
   if (selectedUL) {
     selectedUL.classList.remove("hidden");
     let title = document.querySelector("#top>h1");
-    title.innerHTML = `${selectedValue.replace(/-/g, '').toUpperCase()}<br /><span>Final Projects</span>`;
+    title.innerHTML = `${selectedValue.replace(/-/g, ' ').toUpperCase()}<br /><span>Final Projects</span>`;
   }
 });
 
