@@ -28,8 +28,19 @@ h1>span {
 
 header label,
 header select {
-  font-size: 2rem;
+  font-size: 1rem;
   padding: .5rem 2rem;
+}
+
+@media screen and (min-width: 600px) {
+  h1 {
+    font-size: 3.5rem;
+  }
+
+  header label,
+  #cohort-selection {
+    font-size: 1.5rem;
+  }
 }
 
 .hidden.cohort-final-projects {
@@ -52,10 +63,11 @@ header select {
 
 .cohort-final-projects a {
   padding: inherit;
+  color: white;
 }
 
 .cohort-final-projects a:hover {
-  background-color: aquamarine;
+  background-color: black;
 }
 
 #renderWindow {
