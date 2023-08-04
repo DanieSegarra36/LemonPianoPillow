@@ -23,7 +23,9 @@ cohortsDropdown.addEventListener("change", function () {
   if (selectedUL) {
     selectedUL.classList.remove("hidden");
     let title = document.querySelector("#top>h1");
-    title.innerHTML = `${selectedValue.replace(/-/g, ' ').toUpperCase()}<br /><span>Final Projects</span>`;
+    title.innerHTML = `${selectedValue
+      .replace(/-/g, " ")
+      .toUpperCase()}<br /><span>Final Projects</span>`;
   }
 });
 
@@ -33,4 +35,6 @@ window.addEventListener("load", function () {
   // const selectedUL = document.getElementById("ITAG-2022-Cohort-4");
   // selectedUL.classList.remove("hidden");
   cohortsDropdown.selectedIndex = 0;
+  let title = document.querySelector("#top>h1");
+  title.textContent = "Student Final Projects";
 });
