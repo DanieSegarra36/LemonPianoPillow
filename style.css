@@ -39,8 +39,9 @@ body {
   opacity: 0.7;
 }
 
-#logo:active #animatedCurve,
-#logo:hover #animatedCurve {
+#return-home:active #animatedCurve,
+#return-home:focus #animatedCurve,
+#return-home:hover #animatedCurve {
   opacity: 1;
   fill: burlywood;
   overflow: hidden;
@@ -55,6 +56,7 @@ header {
   position: absolute;
   left: 10px;
   top: 50%;
+  translate: 0% -50%;
   font-size: initial;
   padding: 0.5rem;
   max-width: 40px;
@@ -83,6 +85,8 @@ header {
 #return-home:focus::before,
 #return-home:hover::before {
   content: url('data:image/svg+xml,<svg width="33" height="20" viewBox="0 0 33 20" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M32.337 0.435944C32.2976 0.986607 31.9441 1.51927 31.6911 1.99423C31.2934 2.74073 30.7691 3.43677 30.224 4.08075C29.1885 5.3043 27.7831 6.21569 26.4496 7.07727C24.8297 8.12383 23.0617 8.88969 21.2753 9.60319C18.1082 10.8681 14.8801 11.9592 11.5606 12.7462C9.91905 13.1353 8.27009 13.4903 6.60721 13.7762C6.31636 13.8262 5.75095 13.817 5.49792 14.0067" stroke="hsl(0, 0%, 70%)" stroke-width="2" stroke-linecap="round"/><path d="M9.8219 8.82831C9.76167 8.82831 9.70909 8.82982 9.64797 8.84073C9.37485 8.8895 9.30796 8.92461 8.98205 9.06685C8.16163 9.4249 7.36112 9.831 6.56933 10.2471C5.27685 10.9264 3.93868 11.6198 2.79495 12.5406C2.08746 13.1102 1.3768 13.8754 1.08543 14.757C0.963391 15.1262 0.957287 15.5189 1.16494 15.8577C1.70906 16.7455 2.83129 17.3043 3.71184 17.7785C4.95663 18.4488 6.23187 18.9142 7.58561 19.2942" stroke="hsl(0, 0%, 70%)" stroke-width="2" stroke-linecap="round"/></svg>');
+  position: relative;
+  top: 5px;
 }
 
 #return-home::before{
@@ -106,6 +110,7 @@ header {
 #return-home:focus::after,
 #return-home:hover::after {
   content: 'Return Home';
+  white-space: pre;
   color: hsl(0, 0%, 70%);
 }
 
