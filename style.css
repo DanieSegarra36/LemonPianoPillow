@@ -115,6 +115,11 @@ header {
   #return-home:active svg {
     animation: bannerSlideDesktop 1.5s ease;
   }
+  #return-home {
+    position: absolute;
+    top: initial;
+    translate: 0% -50%;
+  }
 }
 
 @media (hover: none) {
