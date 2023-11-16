@@ -25,7 +25,7 @@ cohortsDropdown.addEventListener("change", function () {
     let title = document.querySelector("#top>h1");
     title.innerHTML = `${selectedValue
       .replace(/-/g, " ")
-      .toUpperCase()}<br /><span>Final Projects</span>`;
+      .toUpperCase()}<br /><span id="cohort-subtitle">Final Projects</span>`;
   }
 });
 
